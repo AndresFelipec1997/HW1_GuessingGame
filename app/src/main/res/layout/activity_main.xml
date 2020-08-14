@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3EDF4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="800dp"
+        android:layout_height="980dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/numeros33"
+        tools:layout_editor_absoluteX="-12dp" />
+
+    <TextView
+        android:layout_width="279dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="¡ADIVINA EL NÚMERO!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text=" INTENTA ADIVINAR EL NÚMERO            ENTRE EL 1 Y 1000"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:text="DIGITA EL NUMERO ENTRE 1 Y 1000"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:autofillHints=""
+        android:background="#E6DFDF"
+        android:ems="10"
+        android:freezesText="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Ingrese el número"
+        android:inputType="number"
+        android:shadowColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textColorHighlight="#001798"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B3EDF4"
+        android:onClick="doClick"
+        android:text="JUEGA!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <Button
+        android:id="@+id/aleatorio"
+        android:layout_width="234dp"
+        android:layout_height="45dp"
+        android:background="#EC5454"
+        android:onClick="doClick1"
+        android:text="Mirar el numero aleatorio"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <TextView
+        android:id="@+id/tunumero"
+        android:layout_width="184dp"
+        android:layout_height="28dp"
+        android:background="#FFFFFF"
+        android:text="número jugado: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
+
+    <TextView
+        android:id="@+id/tunumero2"
+        android:layout_width="251dp"
+        android:layout_height="30dp"
+        android:background="#EC5454"
+        android:text="@string/digita_el_n_mero_para_ganar"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="111dp"
+        android:layout_height="37dp"
+        android:background="#B3EDF4"
+        android:onClick="doClick2"
+        android:text="REGLAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <TextView
+        android:id="@+id/REGLAS"
+        android:layout_width="306dp"
+        android:layout_height="378dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="EL JUEGO CONSISTE EN ADIVINAR EL NÚMERO ALEATORIO DEL 1 AL 1000.
+         SI NO LO ACIERTAS, EL JUEGO TE DIRA  SI ES MAYOR O MENOR EL NÚMERO QUE DIGITASTE. EJEMPLO : (SI EL NUMERO ES 10 Y DIGITAS 9 O MENOR TE DIRA QUE TU NUMERO ES MENOR Y SI DIGITAS 11 O MAYOR TE DIRA
+         QUE NUMERO ES MAYOR Y ASI PODRAS DEDUCIR Y ADIVINAR). SI LLEGAS A LOS 10 INTENTOS SE TE HABILITA
+          LA OPCIÓN DE MIRAR EL NÚMERO ALEATORIO  PERO ES SOLO SI QUIERES VERLO, SI NO PUEDES SEGUIR INTENTANDO LAS VECES QUE QUIERAS PARA ACERTARLO.   PULSA DE NUEVO EN REGLAS PARA CERRAR CUADRO DE REGLAS"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

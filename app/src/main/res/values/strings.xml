@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HW1_GuessingGame</string>
+    <string name="adivina_el_n_mero">ADIVINA EL NÚMERO!</string>
+    <string name="intenta_adivinar_el_n_mero_entre_1_1000">INTENTA ADIVINAR EL NÚMERO ENTRE 1 -1000</string>
+    <string name="digita_el_n_mero_para_ganar">Digita el número para ganar:</string>
+</resources>
