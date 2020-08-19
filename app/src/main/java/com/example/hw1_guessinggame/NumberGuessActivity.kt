@@ -6,15 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.EditText
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_number_guess.*
 import kotlin.random.Random
 
-class MainActivity: AppCompatActivity() {
+class NumberGuessActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_number_guess)
 
     }
     var inte:Int?=0
@@ -51,11 +50,7 @@ class MainActivity: AppCompatActivity() {
             }
            //funcionalidad app
             if (number == nro1) {
-                Toast.makeText(
-                    getApplicationContext(),
-                    "¡lo conseguiste en $inte intentos!",
-                    Toast.LENGTH_LONG
-                ).show();
+                Toast.makeText( getApplicationContext(),"¡lo conseguiste en $inte intentos!",Toast.LENGTH_LONG).show();
 
                 val intent = Intent(this, HW1_GuessingGame2::class.java)
 
